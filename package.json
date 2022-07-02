@@ -1,0 +1,11 @@
+{
+  "name": "encounter-vampire",
+  "version": "1.0.0",
+  "description": "AsicxArt适用的辅助解包的工具，项目名意为邂逅吸血鬼，创意取自Vampires' Melody",
+  "main": "JsonToPic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MPLv2"
+}
