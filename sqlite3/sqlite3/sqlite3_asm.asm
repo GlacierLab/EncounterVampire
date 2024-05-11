@@ -1,0 +1,681 @@
+.code
+extern mProcs:QWORD
+sqlite3_aggregate_context_wrapper proc
+	jmp mProcs[0*8]
+sqlite3_aggregate_context_wrapper endp
+sqlite3_aggregate_count_wrapper proc
+	jmp mProcs[1*8]
+sqlite3_aggregate_count_wrapper endp
+sqlite3_auto_extension_wrapper proc
+	jmp mProcs[2*8]
+sqlite3_auto_extension_wrapper endp
+sqlite3_backup_finish_wrapper proc
+	jmp mProcs[3*8]
+sqlite3_backup_finish_wrapper endp
+sqlite3_backup_init_wrapper proc
+	jmp mProcs[4*8]
+sqlite3_backup_init_wrapper endp
+sqlite3_backup_pagecount_wrapper proc
+	jmp mProcs[5*8]
+sqlite3_backup_pagecount_wrapper endp
+sqlite3_backup_remaining_wrapper proc
+	jmp mProcs[6*8]
+sqlite3_backup_remaining_wrapper endp
+sqlite3_backup_step_wrapper proc
+	jmp mProcs[7*8]
+sqlite3_backup_step_wrapper endp
+sqlite3_bind_blob_wrapper proc
+	jmp mProcs[8*8]
+sqlite3_bind_blob_wrapper endp
+sqlite3_bind_blob64_wrapper proc
+	jmp mProcs[9*8]
+sqlite3_bind_blob64_wrapper endp
+sqlite3_bind_double_wrapper proc
+	jmp mProcs[10*8]
+sqlite3_bind_double_wrapper endp
+sqlite3_bind_int_wrapper proc
+	jmp mProcs[11*8]
+sqlite3_bind_int_wrapper endp
+sqlite3_bind_int64_wrapper proc
+	jmp mProcs[12*8]
+sqlite3_bind_int64_wrapper endp
+sqlite3_bind_null_wrapper proc
+	jmp mProcs[13*8]
+sqlite3_bind_null_wrapper endp
+sqlite3_bind_parameter_count_wrapper proc
+	jmp mProcs[14*8]
+sqlite3_bind_parameter_count_wrapper endp
+sqlite3_bind_parameter_index_wrapper proc
+	jmp mProcs[15*8]
+sqlite3_bind_parameter_index_wrapper endp
+sqlite3_bind_parameter_name_wrapper proc
+	jmp mProcs[16*8]
+sqlite3_bind_parameter_name_wrapper endp
+sqlite3_bind_text_wrapper proc
+	jmp mProcs[17*8]
+sqlite3_bind_text_wrapper endp
+sqlite3_bind_text16_wrapper proc
+	jmp mProcs[18*8]
+sqlite3_bind_text16_wrapper endp
+sqlite3_bind_text64_wrapper proc
+	jmp mProcs[19*8]
+sqlite3_bind_text64_wrapper endp
+sqlite3_bind_value_wrapper proc
+	jmp mProcs[20*8]
+sqlite3_bind_value_wrapper endp
+sqlite3_bind_zeroblob_wrapper proc
+	jmp mProcs[21*8]
+sqlite3_bind_zeroblob_wrapper endp
+sqlite3_blob_bytes_wrapper proc
+	jmp mProcs[22*8]
+sqlite3_blob_bytes_wrapper endp
+sqlite3_blob_close_wrapper proc
+	jmp mProcs[23*8]
+sqlite3_blob_close_wrapper endp
+sqlite3_blob_open_wrapper proc
+	jmp mProcs[24*8]
+sqlite3_blob_open_wrapper endp
+sqlite3_blob_read_wrapper proc
+	jmp mProcs[25*8]
+sqlite3_blob_read_wrapper endp
+sqlite3_blob_reopen_wrapper proc
+	jmp mProcs[26*8]
+sqlite3_blob_reopen_wrapper endp
+sqlite3_blob_write_wrapper proc
+	jmp mProcs[27*8]
+sqlite3_blob_write_wrapper endp
+sqlite3_busy_handler_wrapper proc
+	jmp mProcs[28*8]
+sqlite3_busy_handler_wrapper endp
+sqlite3_busy_timeout_wrapper proc
+	jmp mProcs[29*8]
+sqlite3_busy_timeout_wrapper endp
+sqlite3_cancel_auto_extension_wrapper proc
+	jmp mProcs[30*8]
+sqlite3_cancel_auto_extension_wrapper endp
+sqlite3_changes_wrapper proc
+	jmp mProcs[31*8]
+sqlite3_changes_wrapper endp
+sqlite3_clear_bindings_wrapper proc
+	jmp mProcs[32*8]
+sqlite3_clear_bindings_wrapper endp
+sqlite3_close_wrapper proc
+	jmp mProcs[33*8]
+sqlite3_close_wrapper endp
+sqlite3_close_v2_wrapper proc
+	jmp mProcs[34*8]
+sqlite3_close_v2_wrapper endp
+sqlite3_collation_needed_wrapper proc
+	jmp mProcs[35*8]
+sqlite3_collation_needed_wrapper endp
+sqlite3_collation_needed16_wrapper proc
+	jmp mProcs[36*8]
+sqlite3_collation_needed16_wrapper endp
+sqlite3_column_blob_wrapper proc
+	jmp mProcs[37*8]
+sqlite3_column_blob_wrapper endp
+sqlite3_column_bytes_wrapper proc
+	jmp mProcs[38*8]
+sqlite3_column_bytes_wrapper endp
+sqlite3_column_bytes16_wrapper proc
+	jmp mProcs[39*8]
+sqlite3_column_bytes16_wrapper endp
+sqlite3_column_count_wrapper proc
+	jmp mProcs[40*8]
+sqlite3_column_count_wrapper endp
+sqlite3_column_database_name_wrapper proc
+	jmp mProcs[41*8]
+sqlite3_column_database_name_wrapper endp
+sqlite3_column_database_name16_wrapper proc
+	jmp mProcs[42*8]
+sqlite3_column_database_name16_wrapper endp
+sqlite3_column_decltype_wrapper proc
+	jmp mProcs[43*8]
+sqlite3_column_decltype_wrapper endp
+sqlite3_column_decltype16_wrapper proc
+	jmp mProcs[44*8]
+sqlite3_column_decltype16_wrapper endp
+sqlite3_column_double_wrapper proc
+	jmp mProcs[45*8]
+sqlite3_column_double_wrapper endp
+sqlite3_column_int_wrapper proc
+	jmp mProcs[46*8]
+sqlite3_column_int_wrapper endp
+sqlite3_column_int64_wrapper proc
+	jmp mProcs[47*8]
+sqlite3_column_int64_wrapper endp
+sqlite3_column_name_wrapper proc
+	jmp mProcs[48*8]
+sqlite3_column_name_wrapper endp
+sqlite3_column_name16_wrapper proc
+	jmp mProcs[49*8]
+sqlite3_column_name16_wrapper endp
+sqlite3_column_origin_name_wrapper proc
+	jmp mProcs[50*8]
+sqlite3_column_origin_name_wrapper endp
+sqlite3_column_origin_name16_wrapper proc
+	jmp mProcs[51*8]
+sqlite3_column_origin_name16_wrapper endp
+sqlite3_column_table_name_wrapper proc
+	jmp mProcs[52*8]
+sqlite3_column_table_name_wrapper endp
+sqlite3_column_table_name16_wrapper proc
+	jmp mProcs[53*8]
+sqlite3_column_table_name16_wrapper endp
+sqlite3_column_text_wrapper proc
+	jmp mProcs[54*8]
+sqlite3_column_text_wrapper endp
+sqlite3_column_text16_wrapper proc
+	jmp mProcs[55*8]
+sqlite3_column_text16_wrapper endp
+sqlite3_column_type_wrapper proc
+	jmp mProcs[56*8]
+sqlite3_column_type_wrapper endp
+sqlite3_column_value_wrapper proc
+	jmp mProcs[57*8]
+sqlite3_column_value_wrapper endp
+sqlite3_commit_hook_wrapper proc
+	jmp mProcs[58*8]
+sqlite3_commit_hook_wrapper endp
+sqlite3_compileoption_get_wrapper proc
+	jmp mProcs[59*8]
+sqlite3_compileoption_get_wrapper endp
+sqlite3_compileoption_used_wrapper proc
+	jmp mProcs[60*8]
+sqlite3_compileoption_used_wrapper endp
+sqlite3_complete_wrapper proc
+	jmp mProcs[61*8]
+sqlite3_complete_wrapper endp
+sqlite3_complete16_wrapper proc
+	jmp mProcs[62*8]
+sqlite3_complete16_wrapper endp
+sqlite3_config_wrapper proc
+	jmp mProcs[63*8]
+sqlite3_config_wrapper endp
+sqlite3_context_db_handle_wrapper proc
+	jmp mProcs[64*8]
+sqlite3_context_db_handle_wrapper endp
+sqlite3_create_collation_wrapper proc
+	jmp mProcs[65*8]
+sqlite3_create_collation_wrapper endp
+sqlite3_create_collation16_wrapper proc
+	jmp mProcs[66*8]
+sqlite3_create_collation16_wrapper endp
+sqlite3_create_collation_v2_wrapper proc
+	jmp mProcs[67*8]
+sqlite3_create_collation_v2_wrapper endp
+sqlite3_create_function_wrapper proc
+	jmp mProcs[68*8]
+sqlite3_create_function_wrapper endp
+sqlite3_create_function16_wrapper proc
+	jmp mProcs[69*8]
+sqlite3_create_function16_wrapper endp
+sqlite3_create_function_v2_wrapper proc
+	jmp mProcs[70*8]
+sqlite3_create_function_v2_wrapper endp
+sqlite3_create_module_wrapper proc
+	jmp mProcs[71*8]
+sqlite3_create_module_wrapper endp
+sqlite3_create_module_v2_wrapper proc
+	jmp mProcs[72*8]
+sqlite3_create_module_v2_wrapper endp
+sqlite3_data_count_wrapper proc
+	jmp mProcs[73*8]
+sqlite3_data_count_wrapper endp
+sqlite3_db_config_wrapper proc
+	jmp mProcs[74*8]
+sqlite3_db_config_wrapper endp
+sqlite3_db_filename_wrapper proc
+	jmp mProcs[75*8]
+sqlite3_db_filename_wrapper endp
+sqlite3_db_handle_wrapper proc
+	jmp mProcs[76*8]
+sqlite3_db_handle_wrapper endp
+sqlite3_db_mutex_wrapper proc
+	jmp mProcs[77*8]
+sqlite3_db_mutex_wrapper endp
+sqlite3_db_readonly_wrapper proc
+	jmp mProcs[78*8]
+sqlite3_db_readonly_wrapper endp
+sqlite3_db_release_memory_wrapper proc
+	jmp mProcs[79*8]
+sqlite3_db_release_memory_wrapper endp
+sqlite3_db_status_wrapper proc
+	jmp mProcs[80*8]
+sqlite3_db_status_wrapper endp
+sqlite3_declare_vtab_wrapper proc
+	jmp mProcs[81*8]
+sqlite3_declare_vtab_wrapper endp
+sqlite3_enable_load_extension_wrapper proc
+	jmp mProcs[82*8]
+sqlite3_enable_load_extension_wrapper endp
+sqlite3_enable_shared_cache_wrapper proc
+	jmp mProcs[83*8]
+sqlite3_enable_shared_cache_wrapper endp
+sqlite3_errcode_wrapper proc
+	jmp mProcs[84*8]
+sqlite3_errcode_wrapper endp
+sqlite3_errmsg_wrapper proc
+	jmp mProcs[85*8]
+sqlite3_errmsg_wrapper endp
+sqlite3_errmsg16_wrapper proc
+	jmp mProcs[86*8]
+sqlite3_errmsg16_wrapper endp
+sqlite3_errstr_wrapper proc
+	jmp mProcs[87*8]
+sqlite3_errstr_wrapper endp
+sqlite3_exec_wrapper proc
+	jmp mProcs[88*8]
+sqlite3_exec_wrapper endp
+sqlite3_expired_wrapper proc
+	jmp mProcs[89*8]
+sqlite3_expired_wrapper endp
+sqlite3_extended_errcode_wrapper proc
+	jmp mProcs[90*8]
+sqlite3_extended_errcode_wrapper endp
+sqlite3_extended_result_codes_wrapper proc
+	jmp mProcs[91*8]
+sqlite3_extended_result_codes_wrapper endp
+sqlite3_file_control_wrapper proc
+	jmp mProcs[92*8]
+sqlite3_file_control_wrapper endp
+sqlite3_finalize_wrapper proc
+	jmp mProcs[93*8]
+sqlite3_finalize_wrapper endp
+sqlite3_free_wrapper proc
+	jmp mProcs[94*8]
+sqlite3_free_wrapper endp
+sqlite3_free_table_wrapper proc
+	jmp mProcs[95*8]
+sqlite3_free_table_wrapper endp
+sqlite3_get_autocommit_wrapper proc
+	jmp mProcs[96*8]
+sqlite3_get_autocommit_wrapper endp
+sqlite3_get_auxdata_wrapper proc
+	jmp mProcs[97*8]
+sqlite3_get_auxdata_wrapper endp
+sqlite3_get_table_wrapper proc
+	jmp mProcs[98*8]
+sqlite3_get_table_wrapper endp
+sqlite3_global_recover_wrapper proc
+	jmp mProcs[99*8]
+sqlite3_global_recover_wrapper endp
+sqlite3_initialize_wrapper proc
+	jmp mProcs[100*8]
+sqlite3_initialize_wrapper endp
+sqlite3_interrupt_wrapper proc
+	jmp mProcs[101*8]
+sqlite3_interrupt_wrapper endp
+sqlite3_key_wrapper proc
+	jmp mProcs[102*8]
+sqlite3_key_wrapper endp
+sqlite3_key_v2_wrapper proc
+	jmp mProcs[103*8]
+sqlite3_key_v2_wrapper endp
+sqlite3_last_insert_rowid_wrapper proc
+	jmp mProcs[104*8]
+sqlite3_last_insert_rowid_wrapper endp
+sqlite3_libversion_wrapper proc
+	jmp mProcs[105*8]
+sqlite3_libversion_wrapper endp
+sqlite3_libversion_number_wrapper proc
+	jmp mProcs[106*8]
+sqlite3_libversion_number_wrapper endp
+sqlite3_limit_wrapper proc
+	jmp mProcs[107*8]
+sqlite3_limit_wrapper endp
+sqlite3_load_extension_wrapper proc
+	jmp mProcs[108*8]
+sqlite3_load_extension_wrapper endp
+sqlite3_log_wrapper proc
+	jmp mProcs[109*8]
+sqlite3_log_wrapper endp
+sqlite3_malloc_wrapper proc
+	jmp mProcs[110*8]
+sqlite3_malloc_wrapper endp
+sqlite3_malloc64_wrapper proc
+	jmp mProcs[111*8]
+sqlite3_malloc64_wrapper endp
+sqlite3_memory_alarm_wrapper proc
+	jmp mProcs[112*8]
+sqlite3_memory_alarm_wrapper endp
+sqlite3_memory_highwater_wrapper proc
+	jmp mProcs[113*8]
+sqlite3_memory_highwater_wrapper endp
+sqlite3_memory_used_wrapper proc
+	jmp mProcs[114*8]
+sqlite3_memory_used_wrapper endp
+sqlite3_mprintf_wrapper proc
+	jmp mProcs[115*8]
+sqlite3_mprintf_wrapper endp
+sqlite3_msize_wrapper proc
+	jmp mProcs[116*8]
+sqlite3_msize_wrapper endp
+sqlite3_mutex_alloc_wrapper proc
+	jmp mProcs[117*8]
+sqlite3_mutex_alloc_wrapper endp
+sqlite3_mutex_enter_wrapper proc
+	jmp mProcs[118*8]
+sqlite3_mutex_enter_wrapper endp
+sqlite3_mutex_free_wrapper proc
+	jmp mProcs[119*8]
+sqlite3_mutex_free_wrapper endp
+sqlite3_mutex_leave_wrapper proc
+	jmp mProcs[120*8]
+sqlite3_mutex_leave_wrapper endp
+sqlite3_mutex_try_wrapper proc
+	jmp mProcs[121*8]
+sqlite3_mutex_try_wrapper endp
+sqlite3_next_stmt_wrapper proc
+	jmp mProcs[122*8]
+sqlite3_next_stmt_wrapper endp
+sqlite3_open_wrapper proc
+	jmp mProcs[123*8]
+sqlite3_open_wrapper endp
+sqlite3_open16_wrapper proc
+	jmp mProcs[124*8]
+sqlite3_open16_wrapper endp
+sqlite3_open_v2_wrapper proc
+	jmp mProcs[125*8]
+sqlite3_open_v2_wrapper endp
+sqlite3_os_end_wrapper proc
+	jmp mProcs[126*8]
+sqlite3_os_end_wrapper endp
+sqlite3_os_init_wrapper proc
+	jmp mProcs[127*8]
+sqlite3_os_init_wrapper endp
+sqlite3_overload_function_wrapper proc
+	jmp mProcs[128*8]
+sqlite3_overload_function_wrapper endp
+sqlite3_prepare_wrapper proc
+	jmp mProcs[129*8]
+sqlite3_prepare_wrapper endp
+sqlite3_prepare16_wrapper proc
+	jmp mProcs[130*8]
+sqlite3_prepare16_wrapper endp
+sqlite3_prepare16_v2_wrapper proc
+	jmp mProcs[131*8]
+sqlite3_prepare16_v2_wrapper endp
+sqlite3_prepare_v2_wrapper proc
+	jmp mProcs[132*8]
+sqlite3_prepare_v2_wrapper endp
+sqlite3_profile_wrapper proc
+	jmp mProcs[133*8]
+sqlite3_profile_wrapper endp
+sqlite3_progress_handler_wrapper proc
+	jmp mProcs[134*8]
+sqlite3_progress_handler_wrapper endp
+sqlite3_randomness_wrapper proc
+	jmp mProcs[135*8]
+sqlite3_randomness_wrapper endp
+sqlite3_realloc_wrapper proc
+	jmp mProcs[136*8]
+sqlite3_realloc_wrapper endp
+sqlite3_realloc64_wrapper proc
+	jmp mProcs[137*8]
+sqlite3_realloc64_wrapper endp
+sqlite3_rekey_wrapper proc
+	jmp mProcs[138*8]
+sqlite3_rekey_wrapper endp
+sqlite3_rekey_v2_wrapper proc
+	jmp mProcs[139*8]
+sqlite3_rekey_v2_wrapper endp
+sqlite3_release_memory_wrapper proc
+	jmp mProcs[140*8]
+sqlite3_release_memory_wrapper endp
+sqlite3_reset_wrapper proc
+	jmp mProcs[141*8]
+sqlite3_reset_wrapper endp
+sqlite3_reset_auto_extension_wrapper proc
+	jmp mProcs[142*8]
+sqlite3_reset_auto_extension_wrapper endp
+sqlite3_result_blob_wrapper proc
+	jmp mProcs[143*8]
+sqlite3_result_blob_wrapper endp
+sqlite3_result_blob64_wrapper proc
+	jmp mProcs[144*8]
+sqlite3_result_blob64_wrapper endp
+sqlite3_result_double_wrapper proc
+	jmp mProcs[145*8]
+sqlite3_result_double_wrapper endp
+sqlite3_result_error_wrapper proc
+	jmp mProcs[146*8]
+sqlite3_result_error_wrapper endp
+sqlite3_result_error16_wrapper proc
+	jmp mProcs[147*8]
+sqlite3_result_error16_wrapper endp
+sqlite3_result_error_code_wrapper proc
+	jmp mProcs[148*8]
+sqlite3_result_error_code_wrapper endp
+sqlite3_result_error_nomem_wrapper proc
+	jmp mProcs[149*8]
+sqlite3_result_error_nomem_wrapper endp
+sqlite3_result_error_toobig_wrapper proc
+	jmp mProcs[150*8]
+sqlite3_result_error_toobig_wrapper endp
+sqlite3_result_int_wrapper proc
+	jmp mProcs[151*8]
+sqlite3_result_int_wrapper endp
+sqlite3_result_int64_wrapper proc
+	jmp mProcs[152*8]
+sqlite3_result_int64_wrapper endp
+sqlite3_result_null_wrapper proc
+	jmp mProcs[153*8]
+sqlite3_result_null_wrapper endp
+sqlite3_result_text_wrapper proc
+	jmp mProcs[154*8]
+sqlite3_result_text_wrapper endp
+sqlite3_result_text16_wrapper proc
+	jmp mProcs[155*8]
+sqlite3_result_text16_wrapper endp
+sqlite3_result_text16be_wrapper proc
+	jmp mProcs[156*8]
+sqlite3_result_text16be_wrapper endp
+sqlite3_result_text16le_wrapper proc
+	jmp mProcs[157*8]
+sqlite3_result_text16le_wrapper endp
+sqlite3_result_text64_wrapper proc
+	jmp mProcs[158*8]
+sqlite3_result_text64_wrapper endp
+sqlite3_result_value_wrapper proc
+	jmp mProcs[159*8]
+sqlite3_result_value_wrapper endp
+sqlite3_result_zeroblob_wrapper proc
+	jmp mProcs[160*8]
+sqlite3_result_zeroblob_wrapper endp
+sqlite3_rollback_hook_wrapper proc
+	jmp mProcs[161*8]
+sqlite3_rollback_hook_wrapper endp
+sqlite3_rtree_geometry_callback_wrapper proc
+	jmp mProcs[162*8]
+sqlite3_rtree_geometry_callback_wrapper endp
+sqlite3_rtree_query_callback_wrapper proc
+	jmp mProcs[163*8]
+sqlite3_rtree_query_callback_wrapper endp
+sqlite3_set_authorizer_wrapper proc
+	jmp mProcs[164*8]
+sqlite3_set_authorizer_wrapper endp
+sqlite3_set_auxdata_wrapper proc
+	jmp mProcs[165*8]
+sqlite3_set_auxdata_wrapper endp
+sqlite3_shutdown_wrapper proc
+	jmp mProcs[166*8]
+sqlite3_shutdown_wrapper endp
+sqlite3_sleep_wrapper proc
+	jmp mProcs[167*8]
+sqlite3_sleep_wrapper endp
+sqlite3_snprintf_wrapper proc
+	jmp mProcs[168*8]
+sqlite3_snprintf_wrapper endp
+sqlite3_soft_heap_limit_wrapper proc
+	jmp mProcs[169*8]
+sqlite3_soft_heap_limit_wrapper endp
+sqlite3_soft_heap_limit64_wrapper proc
+	jmp mProcs[170*8]
+sqlite3_soft_heap_limit64_wrapper endp
+sqlite3_sourceid_wrapper proc
+	jmp mProcs[171*8]
+sqlite3_sourceid_wrapper endp
+sqlite3_sql_wrapper proc
+	jmp mProcs[172*8]
+sqlite3_sql_wrapper endp
+sqlite3_status_wrapper proc
+	jmp mProcs[173*8]
+sqlite3_status_wrapper endp
+sqlite3_step_wrapper proc
+	jmp mProcs[174*8]
+sqlite3_step_wrapper endp
+sqlite3_stmt_busy_wrapper proc
+	jmp mProcs[175*8]
+sqlite3_stmt_busy_wrapper endp
+sqlite3_stmt_readonly_wrapper proc
+	jmp mProcs[176*8]
+sqlite3_stmt_readonly_wrapper endp
+sqlite3_stmt_status_wrapper proc
+	jmp mProcs[177*8]
+sqlite3_stmt_status_wrapper endp
+sqlite3_strglob_wrapper proc
+	jmp mProcs[178*8]
+sqlite3_strglob_wrapper endp
+sqlite3_stricmp_wrapper proc
+	jmp mProcs[179*8]
+sqlite3_stricmp_wrapper endp
+sqlite3_strnicmp_wrapper proc
+	jmp mProcs[180*8]
+sqlite3_strnicmp_wrapper endp
+sqlite3_table_column_metadata_wrapper proc
+	jmp mProcs[181*8]
+sqlite3_table_column_metadata_wrapper endp
+sqlite3_test_control_wrapper proc
+	jmp mProcs[182*8]
+sqlite3_test_control_wrapper endp
+sqlite3_thread_cleanup_wrapper proc
+	jmp mProcs[183*8]
+sqlite3_thread_cleanup_wrapper endp
+sqlite3_threadsafe_wrapper proc
+	jmp mProcs[184*8]
+sqlite3_threadsafe_wrapper endp
+sqlite3_total_changes_wrapper proc
+	jmp mProcs[185*8]
+sqlite3_total_changes_wrapper endp
+sqlite3_trace_wrapper proc
+	jmp mProcs[186*8]
+sqlite3_trace_wrapper endp
+sqlite3_transfer_bindings_wrapper proc
+	jmp mProcs[187*8]
+sqlite3_transfer_bindings_wrapper endp
+sqlite3_update_hook_wrapper proc
+	jmp mProcs[188*8]
+sqlite3_update_hook_wrapper endp
+sqlite3_uri_boolean_wrapper proc
+	jmp mProcs[189*8]
+sqlite3_uri_boolean_wrapper endp
+sqlite3_uri_int64_wrapper proc
+	jmp mProcs[190*8]
+sqlite3_uri_int64_wrapper endp
+sqlite3_uri_parameter_wrapper proc
+	jmp mProcs[191*8]
+sqlite3_uri_parameter_wrapper endp
+sqlite3_user_add_wrapper proc
+	jmp mProcs[192*8]
+sqlite3_user_add_wrapper endp
+sqlite3_user_authenticate_wrapper proc
+	jmp mProcs[193*8]
+sqlite3_user_authenticate_wrapper endp
+sqlite3_user_change_wrapper proc
+	jmp mProcs[194*8]
+sqlite3_user_change_wrapper endp
+sqlite3_user_data_wrapper proc
+	jmp mProcs[195*8]
+sqlite3_user_data_wrapper endp
+sqlite3_user_delete_wrapper proc
+	jmp mProcs[196*8]
+sqlite3_user_delete_wrapper endp
+sqlite3_value_blob_wrapper proc
+	jmp mProcs[197*8]
+sqlite3_value_blob_wrapper endp
+sqlite3_value_bytes_wrapper proc
+	jmp mProcs[198*8]
+sqlite3_value_bytes_wrapper endp
+sqlite3_value_bytes16_wrapper proc
+	jmp mProcs[199*8]
+sqlite3_value_bytes16_wrapper endp
+sqlite3_value_double_wrapper proc
+	jmp mProcs[200*8]
+sqlite3_value_double_wrapper endp
+sqlite3_value_int_wrapper proc
+	jmp mProcs[201*8]
+sqlite3_value_int_wrapper endp
+sqlite3_value_int64_wrapper proc
+	jmp mProcs[202*8]
+sqlite3_value_int64_wrapper endp
+sqlite3_value_numeric_type_wrapper proc
+	jmp mProcs[203*8]
+sqlite3_value_numeric_type_wrapper endp
+sqlite3_value_text_wrapper proc
+	jmp mProcs[204*8]
+sqlite3_value_text_wrapper endp
+sqlite3_value_text16_wrapper proc
+	jmp mProcs[205*8]
+sqlite3_value_text16_wrapper endp
+sqlite3_value_text16be_wrapper proc
+	jmp mProcs[206*8]
+sqlite3_value_text16be_wrapper endp
+sqlite3_value_text16le_wrapper proc
+	jmp mProcs[207*8]
+sqlite3_value_text16le_wrapper endp
+sqlite3_value_type_wrapper proc
+	jmp mProcs[208*8]
+sqlite3_value_type_wrapper endp
+sqlite3_vfs_find_wrapper proc
+	jmp mProcs[209*8]
+sqlite3_vfs_find_wrapper endp
+sqlite3_vfs_register_wrapper proc
+	jmp mProcs[210*8]
+sqlite3_vfs_register_wrapper endp
+sqlite3_vfs_unregister_wrapper proc
+	jmp mProcs[211*8]
+sqlite3_vfs_unregister_wrapper endp
+sqlite3_vmprintf_wrapper proc
+	jmp mProcs[212*8]
+sqlite3_vmprintf_wrapper endp
+sqlite3_vsnprintf_wrapper proc
+	jmp mProcs[213*8]
+sqlite3_vsnprintf_wrapper endp
+sqlite3_vtab_config_wrapper proc
+	jmp mProcs[214*8]
+sqlite3_vtab_config_wrapper endp
+sqlite3_vtab_on_conflict_wrapper proc
+	jmp mProcs[215*8]
+sqlite3_vtab_on_conflict_wrapper endp
+sqlite3_wal_autocheckpoint_wrapper proc
+	jmp mProcs[216*8]
+sqlite3_wal_autocheckpoint_wrapper endp
+sqlite3_wal_checkpoint_wrapper proc
+	jmp mProcs[217*8]
+sqlite3_wal_checkpoint_wrapper endp
+sqlite3_wal_checkpoint_v2_wrapper proc
+	jmp mProcs[218*8]
+sqlite3_wal_checkpoint_v2_wrapper endp
+sqlite3_wal_hook_wrapper proc
+	jmp mProcs[219*8]
+sqlite3_wal_hook_wrapper endp
+sqlite3_win32_is_nt_wrapper proc
+	jmp mProcs[220*8]
+sqlite3_win32_is_nt_wrapper endp
+sqlite3_win32_mbcs_to_utf8_wrapper proc
+	jmp mProcs[221*8]
+sqlite3_win32_mbcs_to_utf8_wrapper endp
+sqlite3_win32_set_directory_wrapper proc
+	jmp mProcs[222*8]
+sqlite3_win32_set_directory_wrapper endp
+sqlite3_win32_sleep_wrapper proc
+	jmp mProcs[223*8]
+sqlite3_win32_sleep_wrapper endp
+sqlite3_win32_utf8_to_mbcs_wrapper proc
+	jmp mProcs[224*8]
+sqlite3_win32_utf8_to_mbcs_wrapper endp
+sqlite3_win32_write_debug_wrapper proc
+	jmp mProcs[225*8]
+sqlite3_win32_write_debug_wrapper endp
+end
