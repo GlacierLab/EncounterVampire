@@ -1,9 +1,13 @@
 ﻿using HarmonyLib;
+using Live2D.Cubism.Framework.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -38,9 +42,12 @@ namespace Vampire2Framerate
         //Fix Fullscreen switch
         [HarmonyPatch(typeof(LoadingInit), "Start")]
         [HarmonyPrefix]
-        static void Start1()
+        static bool Start1()
         {
+            Plugin.MenuLoaded = true;
+            Plugin.Log.LogInfo(new System.Diagnostics.StackTrace(true).ToString());
             Plugin.Log.LogInfo("No Fullscreen Switch!");
+            return false;
         }
 
     }
